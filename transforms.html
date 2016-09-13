@@ -1,0 +1,68 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gradients</title>
+	<style type="text/css">
+		
+		div{
+			width:400px;
+			height: 100px;
+			border:2px solid black;
+		}
+		
+
+		
+		#div1{
+			background: linear-gradient(to right, #FFED21 5%, #FF2A06 40%, #9412FF 89%);
+			transform: translate(300px);
+		}
+
+		#div2{
+			background: linear-gradient(to right,#5F2C82, #3498DB);
+			transform: rotate(20deg);
+		}
+
+		#div3{
+			background: linear-gradient(45deg, rgba(0,0,0,0), red);
+			transform: scale(3,1);
+		}
+
+		#div4{
+			background: radial-gradient(#3498DB, #FF2A06);
+			transform: skew(5deg,10deg);
+			
+		}
+		#div5{
+			background: linear-gradient(to right, #FFED21 5%, #FF2A06 40%, #9412FF 89%);
+			transform: translate(300px) skew(45deg);
+		}
+
+		#div6{
+			background: linear-gradient(to right, #FFED21 5%, #FF2A06 40%, #9412FF 89%);
+			transform: rotateX(30deg) rotateY(30deg) rotateZ(30deg);
+		}
+
+		#div7{
+			background: linear-gradient(to right, #FFED21 5%, #FF2A06 40%, #9412FF 89%);
+			-webkit-transform: translate(300px);
+			-webkit-transform: 3D_perspective (400px) rotateY(30deg);
+			}
+
+	</style>
+</head>
+<body>
+
+<div id="div1">Translate</div>
+<div id="div2">Rotate</div>
+<div id="div3">Scale</div>
+<div id="div4">Skew</div>
+<div id="div5">Translate_Skew</div>
+<div id="div6">3D_Rotate</div>
+<div id="div7">3D_perspective</div>
+	
+</body>
+</html>
